@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[PreferencesTable]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] NVARCHAR(MAX) NULL
+)

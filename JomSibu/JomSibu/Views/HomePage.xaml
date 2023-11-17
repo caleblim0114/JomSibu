@@ -2,11 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JomSibu.Views.HomePage"
-             Title="HomePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="HomePage"
+             BackgroundColor="#F5F5F5">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Hello there!"
+                   FontAttributes="Bold"
+                   FontSize="24" 
+                   Margin="20,40,20,0"/>
+
+            <Image Source="shopee_ad2.jpg"
+                   HorizontalOptions="Fill"
+                   Margin="20"/>
+
+            <Label Text="Recommended Trips"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   Margin="20,10"/>
+
+            <!--<StackLayout WidthRequest="300" HorizontalOptions="Start" Margin="20,0">
+                <VerticalStackLayout>
+                    <Image Source="lins_swan_garden.jpg"
+                           />
+
+                    <Rectangle Fill="white"
+                               HeightRequest="80"
+                               />
+                </VerticalStackLayout>
+            </StackLayout>-->
+
+            <Border Margin="20,0" 
+                    BackgroundColor="White" 
+                    Stroke="transparent"
+                    HeightRequest="200"
+                    WidthRequest="300"
+                    HorizontalOptions="Start">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+
+                <Image Source="lins_swan_garden.jpg"/>
+            </Border>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

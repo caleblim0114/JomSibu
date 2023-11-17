@@ -1,25 +1,28 @@
 ﻿<Properties StartupConfiguration="{19E2E6E8-5073-4DDC-B940-5B89FD04107B}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.JomSibu.MobileApp FirstBuild="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="JomSibu/MainPage.xaml">
+  <MonoDevelop.Ide.ItemProperties.JomSibu.Shared FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="JomSibu.Shared/Class1.cs">
     <Files>
-      <File FileName="JomSibu/MainPage.xaml.cs" />
-      <File FileName="JomSibu/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="JomSibu.Shared/Class1.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="JomSibu" expanded="True">
-            <Node name="JomSibu.MobileApp" expanded="True" />
+          <Node name="JomSibu" expanded="True" selected="True">
+            <Node name="JomSibu.WebApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.JomSibu.MobileApp FirstBuild="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.JomSibu.WebApi FirstBuild="True" />
 </Properties>

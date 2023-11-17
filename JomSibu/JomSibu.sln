@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JomSibu.MobileApp", "JomSib
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JomSibu.Database", "..\..\TempFile\TempFile\JomSibu.Database\JomSibu.Database.sqlproj", "{5CE93C5D-66A7-4A5C-B7A8-7054B2755736}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JomSibu.WebApi", "JomSibu.WebApi\JomSibu.WebApi.csproj", "{3D96B241-8BBB-45AB-B322-E3F85EF658BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JomSibu.Shared", "JomSibu.Shared\JomSibu.Shared.csproj", "{3DDDFAA8-4C10-470B-95D3-31323BB3363C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,14 @@ Global
 		{5CE93C5D-66A7-4A5C-B7A8-7054B2755736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CE93C5D-66A7-4A5C-B7A8-7054B2755736}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5CE93C5D-66A7-4A5C-B7A8-7054B2755736}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3D96B241-8BBB-45AB-B322-E3F85EF658BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D96B241-8BBB-45AB-B322-E3F85EF658BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D96B241-8BBB-45AB-B322-E3F85EF658BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D96B241-8BBB-45AB-B322-E3F85EF658BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDDFAA8-4C10-470B-95D3-31323BB3363C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDDFAA8-4C10-470B-95D3-31323BB3363C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDDFAA8-4C10-470B-95D3-31323BB3363C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDDFAA8-4C10-470B-95D3-31323BB3363C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

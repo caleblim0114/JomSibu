@@ -322,3 +322,6 @@ C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lins_swan_garden.scale-100.jpg
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nike.scale-100.png
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\shopee_ad2.scale-100.jpg

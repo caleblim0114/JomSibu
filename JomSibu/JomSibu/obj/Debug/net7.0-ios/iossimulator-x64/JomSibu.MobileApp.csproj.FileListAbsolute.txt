@@ -268,3 +268,6 @@ C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimu
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimulator-x64\JomSibu.MobileApp.pdb
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimulator-x64\JomSibu.MobileApp.genruntimeconfig.cache
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimulator-x64\ref\JomSibu.MobileApp.dll
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\lins_swan_garden.jpg
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\nike.png
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\shopee_ad2.jpg

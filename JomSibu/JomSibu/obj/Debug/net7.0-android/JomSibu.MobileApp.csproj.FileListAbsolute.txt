@@ -958,6 +958,9 @@ C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\lp\
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\lp\151\jl\files.cache
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\lp\153\jl\files.cache
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\lp\155\jl\files.cache
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\lins_swan_garden.jpg
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\nike.png
+C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\shopee_ad2.jpg
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -971,7 +974,3 @@ C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\and
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\android\assets\System.Xml.dll
-C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\lins_swan_garden.jpg
-C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\nike.png
-C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\shopee_ad.jpg
-C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-android\resizetizer\r\drawable\shopee_ad2.jpg

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\codyc\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {}
+    "C:\\Users\\codyc\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\codyc\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
+    "C:\\Users\\codyc\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\codyc\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\codyc\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
         "projectName": "JomSibu.Shared",
-        "projectPath": "C:\\Users\\codyc\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
+        "projectPath": "C:\\Users\\codyc\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
         "packagesPath": "C:\\Users\\codyc\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\codyc\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\obj\\",
         "projectStyle": "PackageReference",

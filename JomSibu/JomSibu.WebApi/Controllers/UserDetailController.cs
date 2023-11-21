@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using JomSibu.Shared.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
@@ -14,11 +15,11 @@ namespace SMCRecycle.WebApi.Controllers
     [Authorize]
     public class UserDetailController : ControllerBase
     {
-        private readonly SMCRecycleDatabaseContext _database;
+        private readonly JomSibuDatabaseContext _database;
         private readonly UserManager<IdentityUser> _userManager;
         private IFileStorageService _fileStorageService;
 
-        public UserDetailController(SMCRecycleDatabaseContext database, UserManager<IdentityUser> userManager, IFileStorageService fileStorageService)
+        public UserDetailController(JomSibuDatabaseContext database, UserManager<IdentityUser> userManager, IFileStorageService fileStorageService)
         {
             _fileStorageService = fileStorageService;
             _database = database;

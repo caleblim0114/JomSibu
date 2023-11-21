@@ -14,7 +14,11 @@ namespace JomSibu
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.99.45")]
+<<<<<<< Updated upstream
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.99.67")]
+=======
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.99.94")]
+>>>>>>> Stashed changes
 	public partial class Resource
 	{
 		

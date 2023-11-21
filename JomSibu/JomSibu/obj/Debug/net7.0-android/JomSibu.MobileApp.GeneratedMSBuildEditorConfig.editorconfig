@@ -12,46 +12,76 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = JomSibu
-build_property.ProjectDir = C:\Users\codyc\Source\Repos\JomSibu\JomSibu\JomSibu\
+<<<<<<< Updated upstream
+build_property.ProjectDir = C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/App.xaml]
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/App.xaml]
+=======
+build_property.ProjectDir = /Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/
+
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/App.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/AppShell.xaml]
+<<<<<<< Updated upstream
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/AppShell.xaml]
+=======
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/AppShell.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/MainPage.xaml]
+<<<<<<< Updated upstream
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/MainPage.xaml]
+=======
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/MainPage.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Colors.xaml]
+<<<<<<< Updated upstream
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Colors.xaml]
+=======
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/Resources/Styles/Colors.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Styles.xaml]
+<<<<<<< Updated upstream
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Styles.xaml]
+=======
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/Resources/Styles/Styles.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/Views/HomePage.xaml]
+<<<<<<< Updated upstream
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/Views/HomePage.xaml]
+=======
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/Views/HomePage.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.HomePage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/HomePage.xaml
 
-[C:/Users/codyc/Source/Repos/JomSibu/JomSibu/JomSibu/Views/LogInPage.xaml]
+<<<<<<< Updated upstream
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/Views/LogInPage.xaml]
+=======
+[/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/Views/LogInPage.xaml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.LogInPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\LogInPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\LogInPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LogInPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LogInPage.xaml

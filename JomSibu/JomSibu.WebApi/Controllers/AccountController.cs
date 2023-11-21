@@ -7,6 +7,7 @@ using System.Text.Encodings.Web;
 using System.Text;
 using SMCRecycle.Data;
 using Microsoft.AspNetCore.Authorization;
+using JomSibu.Shared.Models;
 
 namespace SMCRecycle.WebApi.Controllers
 {
@@ -16,9 +17,9 @@ namespace SMCRecycle.WebApi.Controllers
     {
         private IEmailSender _emailSender;
         private UserManager<IdentityUser> _userManager;
-        private SMCRecycleDatabaseContext _database;
+        private JomSibuDatabaseContext _database;
 
-        public AccountController(IEmailSender emailSender, UserManager<IdentityUser> userManager,SMCRecycleDatabaseContext database)
+        public AccountController(IEmailSender emailSender, UserManager<IdentityUser> userManager,JomSibuDatabaseContext database)
         {
             _database = database;
             _userManager = userManager;

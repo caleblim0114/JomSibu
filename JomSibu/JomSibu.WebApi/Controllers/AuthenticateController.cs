@@ -8,10 +8,12 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.WebUtilities;
-using SMCRecycle.WebApi.Services;
+using JomSibu.WebApi.Services;
 using System.Numerics;
+using JomSibu.Shared.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace SMCRecycle.WebApi.Controllers
+namespace JomSibu.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,12 +22,12 @@ namespace SMCRecycle.WebApi.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
-        private SMCRecycleDatabaseContext _database;
+        private JomSibuDatabaseContext _database;
         private IEmailSender _emailSender;
         private IFileStorageService _fileStorageService;
 
         public AuthenticateController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager,
-            IConfiguration configuration, SMCRecycleDatabaseContext database, IEmailSender emailSender, IFileStorageService fileStorageService)
+            IConfiguration configuration, JomSibuDatabaseContext database, IEmailSender emailSender, IFileStorageService fileStorageService)
         {
             _emailSender = emailSender;
             _database = database;
@@ -113,7 +115,7 @@ namespace SMCRecycle.WebApi.Controllers
                             signingCredentials: new SigningCredentials(tmpAuthSigningKey, SecurityAlgorithms.HmacSha256)
                             );
 
-                        var tmpRole = await _database.UserDetails
+                        var tmpRole = await _database.UserDetailsTables
                             .AsNoTracking()
                             .Select(x => new UserDetailWithEmailAndPhone()
                             {
@@ -195,7 +197,7 @@ namespace SMCRecycle.WebApi.Controllers
                     signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
                     );
 
-                var role = await _database.UserDetails
+                var role = await _database.UserDetailsTables
                     .AsNoTracking()
                     .Select(x => new UserDetailWithEmailAndPhone()
                     {
@@ -233,12 +235,20 @@ namespace SMCRecycle.WebApi.Controllers
             //return StatusCode(StatusCodes.Status500InternalServerError, new CustomResponse { StatusCode = CustomStatusCodes.WrongEmailOrPassword, Message = "Invalid email or password" });
         }
 
-        [HttpGet("RegisterOrganisation")]
-        public Task<List<Organisations>> GetAllOrganisations()
-        {
-            return _database.Organisations.AsNoTracking()
-                .ToListAsync();
-        }
+        //todo please remove shouldnt be here
+        //[HttpGet("RegisterHotels")]
+        //public Task<List<HotelsTable>> GetAllHotels()
+        //{
+        //    return _database.HotelsTables.AsNoTracking()
+        //        .ToListAsync();
+        //}
+
+        //[HttpGet("RegisterLocations")]
+        //public Task<List<LocationsTable>> GetAllLocations()
+        //{
+        //    return _database.LocationsTables.AsNoTracking()
+        //        .ToListAsync();
+        //}
 
         [HttpGet("RegisterResidentialZone")]
         public Task<List<ResidentialZones>> GetAllResidentialZones()

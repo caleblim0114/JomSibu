@@ -1,0 +1,97 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "JomSibu.DatabaseContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "JomSibu.Shared",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[AdvertisementsTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BudgetStatusesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HotelsTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LocationImagesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LocationPreferencesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LocationReviewsTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LocationsTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PreferencesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserDetailsTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserHotelsTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserPreferencesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserRoutesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserVouchersTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[VouchersTable]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "..\\..\\..\\TempFile\\TempFile\\JomSibu.Database\\JomSibu.Database.sqlproj",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

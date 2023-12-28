@@ -37,6 +37,19 @@ namespace JomSibu.WebApi.Controllers
         }
 
         [HttpPost]
+        [Route("UserHotel")]
+        public Task CreateUserHotel(int userId, int hotelId)
+        {
+            _database.UserHotelsTables.Add(new UserHotelsTable
+            {
+                UserId = userId,
+                HotelId = hotelId
+            });
+
+            return _database.SaveChangesAsync();
+        }
+
+        [HttpPost]
         [Route("UpdateHotel")]
         public Task UpdateHotel(int hotelId, HotelsTable newHotel)
         {
@@ -55,7 +68,6 @@ namespace JomSibu.WebApi.Controllers
         public Task DeleteHotel(int hotelId)
         {
             var hotel = _database.HotelsTables.FirstOrDefault(x=>x.Id==hotelId);
-
             if(hotel != null)
             {
                 _database.HotelsTables.Remove(hotel);

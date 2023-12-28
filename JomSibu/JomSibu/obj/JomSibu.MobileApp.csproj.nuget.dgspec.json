@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/JomSibu.MobileApp.csproj": {}
+    "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu\\JomSibu.MobileApp.csproj": {}
   },
   "projects": {
-    "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj": {
+    "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
         "projectName": "JomSibu.Shared",
-        "projectPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj",
-        "packagesPath": "/Users/caleblim/.nuget/packages/",
-        "outputPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/obj/",
+        "projectPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
+        "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/caleblim/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,54 +84,69 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/JomSibu.MobileApp.csproj": {
+    "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu\\JomSibu.MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/JomSibu.MobileApp.csproj",
+        "projectUniqueName": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu\\JomSibu.MobileApp.csproj",
         "projectName": "JomSibu.MobileApp",
-        "projectPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/JomSibu.MobileApp.csproj",
-        "packagesPath": "/Users/caleblim/.nuget/packages/",
-        "outputPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu/obj/",
+        "projectPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu\\JomSibu.MobileApp.csproj",
+        "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/caleblim/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0-android",
           "net7.0-ios",
-          "net7.0-maccatalyst"
+          "net7.0-maccatalyst",
+          "net7.0-windows10.0.19041.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-android33.0": {
             "targetAlias": "net7.0-android",
             "projectReferences": {
-              "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj": {
-                "projectPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj"
+              "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
+                "projectPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj"
               }
             }
           },
           "net7.0-ios16.1": {
             "targetAlias": "net7.0-ios",
             "projectReferences": {
-              "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj": {
-                "projectPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj"
+              "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
+                "projectPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj"
               }
             }
           },
           "net7.0-maccatalyst16.1": {
             "targetAlias": "net7.0-maccatalyst",
             "projectReferences": {
-              "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj": {
-                "projectPath": "/Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/JomSibu.Shared.csproj"
+              "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
+                "projectPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj"
+              }
+            }
+          },
+          "net7.0-windows10.0.19041": {
+            "targetAlias": "net7.0-windows10.0.19041.0",
+            "projectReferences": {
+              "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
+                "projectPath": "C:\\Users\\Caleb\\Source\\Repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj"
               }
             }
           }
@@ -159,13 +180,18 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.96, )",
+              "version": "[7.0.92, )",
               "autoReferenced": true
             },
             "Xamarin.Android.Glide": {
@@ -252,7 +278,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -276,13 +302,18 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.96, )",
+              "version": "[7.0.92, )",
               "autoReferenced": true
             }
           },
@@ -314,7 +345,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -338,13 +369,18 @@
               "version": "[7.0.0, )",
               "autoReferenced": true
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.96, )",
+              "version": "[7.0.92, )",
               "autoReferenced": true
             }
           },
@@ -377,7 +413,102 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0-windows10.0.19041": {
+          "targetAlias": "net7.0-windows10.0.19041.0",
+          "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[7.0.92, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
+              "target": "Package",
+              "version": "[7.0.92, )",
+              "autoReferenced": true
+            },
+            "Microsoft.WindowsAppSDK": {
+              "target": "Package",
+              "version": "[1.2.221209.1, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.28, 10.0.19041.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[7.0.5, 7.0.5]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.Maui.Controls": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Core": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Essentials": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -397,6 +528,9 @@
           "#import": []
         },
         "maccatalyst-x64": {
+          "#import": []
+        },
+        "win10-x64": {
           "#import": []
         }
       }

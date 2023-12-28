@@ -38,3 +38,17 @@ C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu.Shared/obj/Debug/net7.0/ref/
 /Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/obj/Debug/net7.0/JomSibu.Shared.pdb
 /Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/obj/Debug/net7.0/JomSibu.Shared.genruntimeconfig.cache
 /Users/caleblim/Projects/JomSibu/JomSibu/JomSibu.Shared/obj/Debug/net7.0/ref/JomSibu.Shared.dll
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\bin\Debug\net7.0\JomSibu.Shared.deps.json
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\bin\Debug\net7.0\JomSibu.Shared.runtimeconfig.json
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\bin\Debug\net7.0\JomSibu.Shared.dll
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\bin\Debug\net7.0\JomSibu.Shared.pdb
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.csproj.AssemblyReference.cache
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.AssemblyInfoInputs.cache
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.AssemblyInfo.cs
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.dll
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\refint\JomSibu.Shared.dll
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.pdb
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\JomSibu.Shared.genruntimeconfig.cache
+C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu.Shared\obj\Debug\net7.0\ref\JomSibu.Shared.dll

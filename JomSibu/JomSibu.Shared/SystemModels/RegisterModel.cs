@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JomSibu.Shared.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -28,5 +29,9 @@ namespace JomSibu.Shared.SystemModels
         public string Password { get; set; }
 
         public int UserRoleId { get; set; }
+        public int IsHalal { get; set; }
+        public int IsVegeterian { get; set; }
+        public int BudgetStatusId { get; set; }
+        public ICollection<PreferencesTable>? Preferences { get; set; }
     }
 }

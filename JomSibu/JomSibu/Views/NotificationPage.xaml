@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JomSibu.Views.NotificationPage"
+             Title="NotificationPage"
+             BackgroundColor="#F5F5F5">
+    <Grid>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Label Grid.Row="0"
+                           Text="Notifications"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           FontFamily="Archivo"
+                           HorizontalOptions="Center"
+                           Margin="0,20"/>
+                </StackLayout>
+
+                <StackLayout Margin="20,0" Spacing="10">
+                    <Border Stroke="Transparent"
+                            StrokeThickness="0"
+                            HeightRequest="90"
+                            BackgroundColor="White"
+                            StrokeShape="RoundRectangle 8"
+                            Padding="0">
+                        <StackLayout Margin="10,0" VerticalOptions="Center">
+                            <Grid ColumnDefinitions="*,3*,*">
+                                <Border StrokeShape="Ellipse"
+                                        HeightRequest="60"
+                                        WidthRequest="60"
+                                        Grid.Column="0">
+                                    <Image Source="profile_pic1"/>
+                                </Border>
+
+                                <Label Text="Check out JomSibu today to enjoy bunches of discounted traveling packages!"
+                                       Grid.Column="1"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Margin="10,0,0,0"/>
+
+                                <Image Source="chevron_right_black"
+                                       HeightRequest="40"
+                                       HorizontalOptions="End"
+                                       Grid.Column="2"/>
+                            </Grid>
+                        </StackLayout>
+                    </Border>
+
+                    <Border Stroke="Transparent"
+                            StrokeThickness="0"
+                            HeightRequest="90"
+                            BackgroundColor="White"
+                            StrokeShape="RoundRectangle 8"
+                            Padding="0">
+                        <StackLayout Margin="10,0" VerticalOptions="Center">
+                            <Grid ColumnDefinitions="*,3*,*">
+                                <Border StrokeShape="Ellipse"
+                                        HeightRequest="60"
+                                        WidthRequest="60"
+                                        Grid.Column="0">
+                                    <Image Source="profile_pic1"/>
+                                </Border>
+
+                                <Label Text="Check out JomSibu today to enjoy bunches of discounted traveling packages!"
+                                       Grid.Column="1"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Margin="10,0,0,0"/>
+
+                                <Image Source="chevron_right_black"
+                                       HeightRequest="40"
+                                       HorizontalOptions="End"
+                                       Grid.Column="2"/>
+                            </Grid>
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

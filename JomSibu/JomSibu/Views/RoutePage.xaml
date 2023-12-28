@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JomSibu.Views.RoutePage"
+             Title="RoutePage"
+             BackgroundColor="#F5F5F5">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0"
+                   Text="Route Plan"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   FontFamily="Archivo"
+                   HorizontalOptions="Center"
+                   Margin="0,20"/>
+
+            
+            <!--Middle Image Starts-->
+            <StackLayout Grid.Row="1">
+                <Image Margin="0,150,0,20"
+                       HorizontalOptions="CenterAndExpand"
+                       Source="undraw_hiking_re_k0bc.svg"
+                       HeightRequest="180"/>
+
+                <Label Text="There is no plan at the moment"
+                       FontSize="19"
+                       FontAttributes="None"
+                       FontFamily="Archivo"
+                       HorizontalOptions="Center"
+                       Margin="0,20,0,10"/>
+
+                <Label Text="Check out your favourite places!"
+                       TextColor="Grey"
+                       FontSize="15"
+                       FontAttributes="None"
+                       FontFamily="Archivo"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+            <!--Middle Image Ends-->
+            
+            <!--Hotels Floating Border Starts-->
+            <StackLayout Grid.Row="2" Margin="20,160">
+                <Border BackgroundColor="White" 
+                        Stroke="transparent"
+                        HeightRequest="80"
+                        VerticalOptions="End"
+                        StrokeShape="RoundRectangle 10">
+                    <Border.Shadow>
+                        <Shadow Brush="Black"
+                                Offset="0,15"
+                                Opacity="0.1"/>
+                    </Border.Shadow>
+
+                    <Label Text="Tap to select hotel"
+                           TextColor="Grey"
+                           FontSize="19"
+                           FontAttributes="None"
+                           FontFamily="Archivo"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+
+                </Border>
+            </StackLayout>
+            <!--Hotels Floating Border Ends-->
+        </Grid>
+    </StackLayout>
+</ContentPage>

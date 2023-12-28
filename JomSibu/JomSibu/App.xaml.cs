@@ -1,4 +1,6 @@
-﻿namespace JomSibu;
+﻿
+
+namespace JomSibu;
 
 public partial class App : Application
 {
@@ -7,6 +9,6 @@ public partial class App : Application
 		InitializeComponent();
 
 		MainPage = new Views.HomePage();
-	}
+    }
 }
 

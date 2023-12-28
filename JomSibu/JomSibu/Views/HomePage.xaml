@@ -3,17 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JomSibu.Views.HomePage"
              Title="HomePage"
-             BackgroundColor="#F5F5F5"
-             Shell.NavBarIsVisible="False">
-    <ScrollView>
+             BackgroundColor="#F5F5F5">
+    <ScrollView VerticalScrollBarVisibility="Never">
         <StackLayout>
             <StackLayout>
-                <Label Text="Hello there!"
-                   FontAttributes="Bold"
-                   FontSize="24" 
-                   Margin="20,40,20,0"/>
+                <Grid Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                <!--Ads corner-->
+                    <Label Text="Hello there!"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           FontFamily="Archivo"
+                           Margin="20,10"
+                           Grid.Column="0"/>
+
+                    <Border Grid.Column="1"
+                            HeightRequest="45"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Margin="20,0">
+                        <Border.StrokeShape>
+                            <Ellipse/>
+                        </Border.StrokeShape>
+
+                        <Image Source="profile_pic1.png"/>
+                    </Border>
+                </Grid>
+
+                <!--Ads Corner Starts-->
                 <Border Margin="20,20" 
                     BackgroundColor="White" 
                     Stroke="transparent"
@@ -24,10 +44,14 @@
                         <RoundRectangle CornerRadius="6" />
                     </Border.StrokeShape>
 
-                    <Image Source="shopee_ad2.jpg"/>
+                    <Image Source="shopee_ad2.jpg"
+                           Aspect="AspectFill"/>
                 </Border>
+                <!--Ads Corner Ends-->
+                
             </StackLayout>
 
+            <!--Recommend Trips Starts-->
             <StackLayout>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -38,10 +62,12 @@
                     <Label Text="Recommended Trips"
                            FontAttributes="Bold"
                            FontSize="20"
+                           FontFamily="Archivo"
                            Margin="20,10"
                            Grid.Column="0"/>
 
                     <Label Text="See all"
+                           FontFamily="Roboto"
                            Grid.Column="1"
                            HorizontalOptions="End"
                            VerticalOptions="Center"
@@ -49,8 +75,54 @@
                            TextColor="#F7A350"/>
                 </Grid>
 
-                <ScrollView Orientation="Horizontal">
-                    <HorizontalStackLayout Shell.NavBarIsVisible="False" Margin="20,0" Spacing="15">
+                <!--<CollectionView ItemsLayout="VerticalList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Border BackgroundColor="White" 
+                                        Stroke="transparent"
+                                        HeightRequest="200"
+                                        WidthRequest="300"
+                                        HorizontalOptions="Start"
+                                        StrokeShape="RoundRectangle 10">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Image Grid.Row="0"
+                                               Source="{Binding }"
+                                               Aspect="AspectFill"/>
+
+                                        <Label Grid.Row="1" 
+                                       Text="Central Sibu"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       FontFamily="Archivo"
+                                       Margin="20,20"
+                                       VerticalOptions="Center"/>
+
+                                        <Button Grid.Row="1"
+                                        Margin="20,0"
+                                        HorizontalOptions="End"
+                                        Padding="0"
+                                        HeightRequest="28"
+                                        WidthRequest="80"
+                                        CornerRadius="4"
+                                        BackgroundColor="#F7A350"
+                                        Text="See Details"
+                                        TextColor="White"
+                                        FontSize="11"/>
+                                    </Grid>
+                                </Border>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>-->
+
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <HorizontalStackLayout  Margin="20,0" Spacing="10">
                         <Border BackgroundColor="White" 
                                 Stroke="transparent"
                                 HeightRequest="200"
@@ -64,21 +136,24 @@
                                 </Grid.RowDefinitions>
 
                                 <Image Grid.Row="0"
-                                       Source="lins_swan_garden.jpg"/>
+                                       Source="lins_swan_garden.jpg"
+                                       Aspect="AspectFill"/>
 
                                 <Label Grid.Row="1" 
                                        Text="Central Sibu"
                                        FontAttributes="Bold"
                                        FontSize="16"
+                                       FontFamily="Archivo"
                                        Margin="20,20"
                                        VerticalOptions="Center"/>
 
                                 <Button Grid.Row="1"
                                         Margin="20,0"
                                         HorizontalOptions="End"
-                                        HeightRequest="33"
-                                        WidthRequest="85"
-                                        CornerRadius="3"
+                                        Padding="0"
+                                        HeightRequest="28"
+                                        WidthRequest="80"
+                                        CornerRadius="4"
                                         BackgroundColor="#F7A350"
                                         Text="See Details"
                                         TextColor="White"
@@ -99,21 +174,24 @@
                                 </Grid.RowDefinitions>
 
                                 <Image Grid.Row="0"
-                                       Source="lins_swan_garden.jpg"/>
+                                       Source="lins_swan_garden.jpg"
+                                       Aspect="AspectFill"/>
 
                                 <Label Grid.Row="1" 
                                        Text="Central Sibu"
                                        FontAttributes="Bold"
                                        FontSize="16"
+                                       FontFamily="Archivo"
                                        Margin="20,20"
                                        VerticalOptions="Center"/>
 
                                 <Button Grid.Row="1"
                                         Margin="20,0"
                                         HorizontalOptions="End"
-                                        HeightRequest="33"
-                                        WidthRequest="85"
-                                        CornerRadius="3"
+                                        Padding="0"
+                                        HeightRequest="28"
+                                        WidthRequest="80"
+                                        CornerRadius="4"
                                         BackgroundColor="#F7A350"
                                         Text="See Details"
                                         TextColor="White"
@@ -122,9 +200,12 @@
                         </Border>
                     </HorizontalStackLayout>
                 </ScrollView>
-            </StackLayout>
 
-            <StackLayout>
+            </StackLayout>
+            <!--Recommend Trips Ends-->
+
+            <!--Promotions & Coupons Starts-->
+            <StackLayout Margin="0,20,0,0">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*"/>
@@ -134,17 +215,185 @@
                     <Label Text="Promotions and Coupons"
                            FontAttributes="Bold"
                            FontSize="20"
+                           FontFamily="Archivo"
                            Margin="20,10"
                            Grid.Column="0"/>
 
                     <Label Text="See all"
                            Grid.Column="1"
+                           FontFamily="Roboto"
                            HorizontalOptions="End"
                            VerticalOptions="Center"
                            Margin="20,0"
                            TextColor="#F7A350"/>
                 </Grid>
+
+                <VerticalStackLayout Margin="20,0" Spacing="5">
+                    <Border BackgroundColor="White" 
+                            Stroke="transparent"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            StrokeShape="RoundRectangle 10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="mcdonald.png"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Margin="15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="10% Off"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       FontFamily="Archivo"
+                                       VerticalOptions="End"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="Valid until 11 Nov"
+                                       TextColor="Grey"
+                                       FontSize="12"
+                                       FontFamily="Roboto"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+
+                            <Button Grid.Column="2"
+                                    Margin="20,0"
+                                    HorizontalOptions="End"
+                                    Padding="0"
+                                    HeightRequest="33"
+                                    WidthRequest="90"
+                                    CornerRadius="3"
+                                    BackgroundColor="#F7A350"
+                                    Text="Redeem Now"
+                                    TextColor="White"
+                                    FontSize="11"/>
+                        </Grid>
+                    </Border>
+
+                    <Border BackgroundColor="White" 
+                            Stroke="transparent"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            StrokeShape="RoundRectangle 10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="mcdonald.png"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Margin="15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="10% Off"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       FontFamily="Archivo"
+                                       VerticalOptions="End"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="Valid until 11 Nov"
+                                       TextColor="Grey"
+                                       FontFamily="Roboto"
+                                       FontSize="12"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+
+                            <Button Grid.Column="2"
+                                    Margin="20,0"
+                                    HorizontalOptions="End"
+                                    Padding="0"
+                                    HeightRequest="33"
+                                    WidthRequest="90"
+                                    CornerRadius="3"
+                                    BackgroundColor="#F7A350"
+                                    Text="Redeem Now"
+                                    TextColor="White"
+                                    FontSize="11"/>
+                        </Grid>
+                    </Border>
+
+                    <Border BackgroundColor="White" 
+                            Stroke="transparent"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            StrokeShape="RoundRectangle 10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="mcdonald.png"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Margin="15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="10% Off"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       FontFamily="Archivo"
+                                       VerticalOptions="End"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="Valid until 11 Nov"
+                                       TextColor="Grey"
+                                       FontFamily="Roboto"
+                                       FontSize="12"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+
+                            <Button Grid.Column="2"
+                                    Margin="20,0"
+                                    HorizontalOptions="End"
+                                    Padding="0"
+                                    HeightRequest="33"
+                                    WidthRequest="90"
+                                    CornerRadius="3"
+                                    BackgroundColor="#F7A350"
+                                    Text="Redeem Now"
+                                    TextColor="White"
+                                    FontSize="11"/>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
             </StackLayout>
+            <!--Promotions & Coupons Ends-->
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

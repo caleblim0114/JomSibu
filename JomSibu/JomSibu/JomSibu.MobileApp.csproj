@@ -51,12 +51,29 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 	<ItemGroup>
+	  <None Remove="Resources\Images\backbutton_white.png" />
+	  <None Remove="Resources\Images\chevron_right_black.png" />
+	  <None Remove="Resources\Images\edit_button.png" />
+	  <None Remove="Resources\Images\hotel1.jpg" />
+	  <None Remove="Resources\Images\inside_room.jpg" />
 	  <None Remove="Resources\Images\lins_swan_garden.jpg" />
+	  <None Remove="Resources\Images\lobby.jpg" />
+	  <None Remove="Resources\Images\logout.png" />
+	  <None Remove="Resources\Images\mcdonald.png" />
 	  <None Remove="Resources\Images\nike.png" />
+	  <None Remove="Resources\Images\outside_hotel.jpg" />
+	  <None Remove="Resources\Images\profile_pic1.png" />
+	  <None Remove="Resources\Images\regularuser.png" />
 	  <None Remove="Resources\Images\shopee_ad2.jpg" />
+	  <None Remove="Resources\Images\sibu_heritage_02.jpg" />
+	  <None Remove="Resources\Images\sibu_heritage_03.jpg" />
+	  <None Remove="Resources\Images\sibu_heritage_04.jpg" />
+	  <None Remove="Resources\Images\sibu_heritage_centre.jfif" />
+	  <None Remove="Resources\Images\undraw_hiking_re_k0bc.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
@@ -65,10 +82,40 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\FavouritePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\HotelLocationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HotelsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LocationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LogInPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NotificationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PromotionAndCouponsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RoutePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\VoucherPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

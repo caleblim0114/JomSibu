@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="JomSibu.Views.HotelLocationPage"
+             Title="HotelLocationPage">
+    <Grid>
+        <StackLayout>
+            <Border Stroke="Transparent"
+                    StrokeThickness="-1"
+                    HeightRequest="280">
+                <Image Source="hotel1" Aspect="AspectFill"/>
+            </Border>
+        </StackLayout>
+
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <Border Stroke="Transparent"
+                    StrokeThickness="-1"
+                    StrokeShape="RoundRectangle 25 25 0 0"
+                    Background="#F5F5F5"
+                    Margin="0,250,0,0">
+
+                <StackLayout>
+                    <!--Headers Start-->
+                    <VerticalStackLayout Margin="20,20,0,0" Spacing="5">
+                        <Label Text="Kingwood Hotel, Sibu"
+                                FontSize="25"
+                                FontFamily="Archivo"
+                                FontAttributes="Bold"/>
+
+                        <Label  Text="No.12, Lorong Lanang 4, Pekan Sibu"
+                                        TextColor="Grey"
+                                        FontFamily="Roboto"/>
+
+                        <HorizontalStackLayout Spacing="0">
+                            <Image  Margin="0,0,5,0"
+                                            Source="star.png"
+                                            HeightRequest="20"/>
+
+                            <Label  Text="4.0"
+                                        TextColor="#F7A350"
+                                        FontAttributes="Bold"
+                                        FontSize="16"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <!--Headers End-->
+
+                    <StackLayout>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                            <HorizontalStackLayout Margin="20,20,20,0" Spacing="5">
+                                <Border StrokeShape="RoundRectangle 7"
+                                            Stroke="Transparent"
+                                            HeightRequest="100"
+                                            WidthRequest="150">
+                                    <Image Source="inside_room.jpg"
+                                                Aspect="AspectFill"/>
+                                </Border>
+
+                                <Border StrokeShape="RoundRectangle 7"
+                                            Stroke="Transparent"
+                                            HeightRequest="100"
+                                            WidthRequest="150">
+                                    <Image Source="lobby.jpg"
+                                                Aspect="AspectFill"/>
+                                </Border>
+
+                                <Border StrokeShape="RoundRectangle 7"
+                                            Stroke="Transparent"
+                                            HeightRequest="100"
+                                            WidthRequest="150">
+                                    <Image Source="outside_hotel.jpg"
+                                                Aspect="AspectFill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                    <!--Horizontal Sliding Pics Ends-->
+
+                    <!--Description Starts-->
+                    <StackLayout Margin="20,20">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+                                   FontFamily="Roboto"/>
+                    </StackLayout>
+                    <!--Description Ends-->
+
+
+                    <!--Reviews Starts-->
+                    <StackLayout Margin="20,10,20,90" Spacing="25">
+                        <Label Text="Reviews"
+                                   FontSize="20"
+                                   FontFamily="Archivo"
+                                   FontAttributes="Bold"/>
+
+                        <StackLayout>
+                            <Grid ColumnDefinitions=".9*,6*">
+                                <Border Grid.Column="0"
+                                            HeightRequest="45"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <Ellipse/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="profile_pic1.png"/>
+                                </Border>
+
+                                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid RowDefinitions="*,*">
+                                        <Label Grid.Row="0"
+                                                   Text="Cody Cheng"
+                                                   FontFamily="Archivo"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   Margin="0"/>
+
+                                        <Label Grid.Row="1"
+                                                   Text="Hello Omae wa mou shindeiru"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Grid ColumnDefinitions=".9*,6*">
+                                <Border Grid.Column="0"
+                                        HeightRequest="45"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <Ellipse/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="profile_pic1.png"/>
+                                </Border>
+
+                                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid RowDefinitions="*,*">
+                                        <Label Grid.Row="0"
+                                                   Text="Cody Cheng"
+                                                   FontFamily="Archivo"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   Margin="0"/>
+
+                                        <Label Grid.Row="1"
+                                                   Text="Hello Omae wa mou shindeiru"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Grid ColumnDefinitions=".9*,6*">
+                                <Border Grid.Column="0"
+                                        HeightRequest="45"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <Ellipse/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="profile_pic1.png"/>
+                                </Border>
+
+                                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid RowDefinitions="*,*">
+                                        <Label Grid.Row="0"
+                                                   Text="Cody Cheng"
+                                                   FontFamily="Archivo"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   Margin="0"/>
+
+                                        <Label Grid.Row="1"
+                                                   Text="Hello Omae wa mou shindeiru"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                    <!--Reviews Ends-->
+                </StackLayout>
+
+            </Border>
+        </ScrollView>
+
+        <Image Source="backbutton_white"
+               HeightRequest="35"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               Margin="20,30,0,0"/>
+
+        <Button VerticalOptions="End"
+                Margin="20,20"
+                Background="#F7A350"
+                HeightRequest="50"
+                Text="Select as My Hotel"
+                FontFamily="Archivo"
+                FontAttributes="Bold"
+                FontSize="20"/>
+    </Grid>
+</ContentPage>

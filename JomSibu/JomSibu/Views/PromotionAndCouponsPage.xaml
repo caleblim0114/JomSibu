@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JomSibu.Views.PromotionAndCouponsPage"
+             Title="PromotionAndCouponsPage">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout>
+            <Border Margin="0,0,0,10" BackgroundColor="#F5F5F5" Stroke="Transparent">
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Column="0"
+                       Source="chevron_left.jpg"
+                       HeightRequest="40"
+                       HorizontalOptions="Start"
+                       Margin="10,0"/>
+
+                        <Label Grid.Column="1"
+                       Text="Vouchers"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       FontFamily="Archivo"
+                       HorizontalOptions="Center"
+                       Margin="0,20"/>
+                    </Grid>
+                </StackLayout>
+            </Border>
+
+            <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never">
+                <VerticalStackLayout Margin="20,0" Spacing="5">
+                    <Border BackgroundColor="White" 
+                            Stroke="transparent"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            StrokeShape="RoundRectangle 10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="mcdonald.png"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Margin="15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="10% Off"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       FontFamily="Archivo"
+                                       VerticalOptions="End"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="Valid until 11 Nov"
+                                       TextColor="Grey"
+                                       FontSize="12"
+                                       FontFamily="Roboto"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+
+                            <Button Grid.Column="2"
+                                    Margin="20,0"
+                                    HorizontalOptions="End"
+                                    Padding="0"
+                                    HeightRequest="33"
+                                    WidthRequest="90"
+                                    CornerRadius="3"
+                                    BackgroundColor="#F7A350"
+                                    Text="Redeem Now"
+                                    TextColor="White"
+                                    FontSize="11"/>
+                        </Grid>
+                    </Border>
+
+                    <Border BackgroundColor="White" 
+                            Stroke="transparent"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            StrokeShape="RoundRectangle 10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="mcdonald.png"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Margin="15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="10% Off"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       FontFamily="Archivo"
+                                       VerticalOptions="End"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="Valid until 11 Nov"
+                                       TextColor="Grey"
+                                       FontFamily="Roboto"
+                                       FontSize="12"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+
+                            <Button Grid.Column="2"
+                                    Margin="20,0"
+                                    HorizontalOptions="End"
+                                    Padding="0"
+                                    HeightRequest="33"
+                                    WidthRequest="90"
+                                    CornerRadius="3"
+                                    BackgroundColor="#F7A350"
+                                    Text="Redeem Now"
+                                    TextColor="White"
+                                    FontSize="11"/>
+                        </Grid>
+                    </Border>
+
+                    <Border BackgroundColor="White" 
+                            Stroke="transparent"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            StrokeShape="RoundRectangle 10">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="mcdonald.png"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Margin="15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="10% Off"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       FontFamily="Archivo"
+                                       VerticalOptions="End"/>
+
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="Valid until 11 Nov"
+                                       TextColor="Grey"
+                                       FontFamily="Roboto"
+                                       FontSize="12"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+
+                            <Button Grid.Column="2"
+                                    Margin="20,0"
+                                    HorizontalOptions="End"
+                                    Padding="0"
+                                    HeightRequest="33"
+                                    WidthRequest="90"
+                                    CornerRadius="3"
+                                    BackgroundColor="#F7A350"
+                                    Text="Redeem Now"
+                                    TextColor="White"
+                                    FontSize="11"/>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

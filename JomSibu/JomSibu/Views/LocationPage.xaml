@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="JomSibu.Views.LocationPage"
+             Title="LocationPage"
+             BackgroundColor="#F5F5F5">
+    <Grid>
+        <StackLayout>
+            <Border Stroke="Transparent"
+                    StrokeThickness="-1"
+                    HeightRequest="280">
+                <Image Source="sibu_heritage_centre" Aspect="AspectFill"/>
+            </Border>
+        </StackLayout>
+        
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <Border Stroke="Transparent"
+                    StrokeThickness="-1"
+                    StrokeShape="RoundRectangle 25 25 0 0"
+                    Background="#F5F5F5"
+                    Margin="0,250,0,0">
+
+                <StackLayout>
+                    <!--Headers Start-->
+                    <VerticalStackLayout Margin="20,20,0,0" Spacing="5">
+                        <StackLayout>
+                            <Grid ColumnDefinitions="4*,*">
+                                <Label Text="Sibu Heritage Centre"
+                                        FontSize="25"
+                                        FontFamily="Archivo"
+                                        FontAttributes="Bold"
+                                       Grid.Column="0"/>
+
+                                <Image Source="bookmark_outline_black"
+                                       HeightRequest="25"
+                                       HorizontalOptions="Center"
+                                       Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <Label  Text="No.12, Lorong Lanang 4, Pekan Sibu"
+                                TextColor="Grey"
+                                FontSize="15"
+                                FontFamily="Roboto"/>
+
+                        <HorizontalStackLayout Spacing="0">
+                            <Image  Margin="0,0,5,0"
+                                    Source="star.png"
+                                    HeightRequest="20"/>
+
+                            <Label  Text="4.2"
+                                    TextColor="#F7A350"
+                                    FontAttributes="Bold"
+                                    FontSize="15"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <!--Headers End-->
+
+                    <!--Operation Hour Etc. Start-->
+                    <StackLayout Margin="20,10,20,0">
+                        <HorizontalStackLayout Spacing="15">
+                            <StackLayout>
+                                <Grid ColumnDefinitions="*,4*">
+                                    <Image Source="regulartime"
+                                        HeightRequest="30"
+                                        Grid.Column="0"
+                                        Margin="0,0,5,0"/>
+
+                                    <Grid RowDefinitions="*,*" Grid.Column="1">
+                                        <Label Text="Operation Hour"
+                                            FontFamily="Roboto"
+                                            FontSize="14"
+                                            TextColor="Grey"
+                                            Grid.Row="0"/>
+
+                                        <Label Text="10:00 AM - 04:30 PM"
+                                            FontSize="14"
+                                            Grid.Row="1"/>
+                                    </Grid>
+                                </Grid>
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Grid ColumnDefinitions="*,4*">
+                                    <Image Source="check_circle"
+                                        HeightRequest="30"
+                                        Grid.Column="0"
+                                        Margin="0,0,5,0"/>
+
+                                    <Grid RowDefinitions="*,*" Grid.Column="1">
+                                        <Label Text="Recommended Hour"
+                                                FontFamily="Roboto"
+                                                FontSize="14"
+                                                TextColor="Grey"
+                                                Grid.Row="0"/>
+
+                                        <Label Text="02:00 PM - 04:00 PM"
+                                                FontSize="14"
+                                                Grid.Row="1"/>
+                                    </Grid>
+                                </Grid>
+                            </StackLayout>
+                        </HorizontalStackLayout>
+
+                        <StackLayout Margin="0,10">
+                            <Grid ColumnDefinitions="*,*">
+                                <HorizontalStackLayout Grid.Column="0">
+                                    <Grid ColumnDefinitions="*,4*">
+                                        <Image Grid.Column="0"
+                                               Source="tags"
+                                               Margin="0,0,5,0"
+                                               HeightRequest="30"/>
+
+                                        <Grid Grid.Column="1" ColumnDefinitions="*,2*">
+                                            <Label Text="Preferences"
+                                                    TextColor="Grey"
+                                                    HorizontalOptions="Start"/>
+                                        </Grid>
+                                    </Grid>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                    <!--Operation Hour Etc. End-->
+                    
+                    <StackLayout>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                            <HorizontalStackLayout Margin="20,10,20,0" Spacing="5">
+                                <Border StrokeShape="RoundRectangle 7"
+                                        Stroke="Transparent"
+                                        HeightRequest="100"
+                                        WidthRequest="150">
+                                    <Image Source="sibu_heritage_02"
+                                            Aspect="AspectFill"/>
+                                </Border>
+
+                                <Border StrokeShape="RoundRectangle 7"
+                                        Stroke="Transparent"
+                                        HeightRequest="100"
+                                        WidthRequest="150">
+                                    <Image Source="sibu_heritage_03"
+                                             Aspect="AspectFill"/>
+                                </Border>
+
+                                <Border StrokeShape="RoundRectangle 7"
+                                        Stroke="Transparent"
+                                        HeightRequest="100"
+                                        WidthRequest="150">
+                                    <Image Source="sibu_heritage_04"
+                                            Aspect="AspectFill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                    <!--Horizontal Sliding Pics Ends-->
+
+                    <!--Description Starts-->
+                    <StackLayout Margin="20,20">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+                                FontFamily="Roboto"
+                               FontSize="15"/>
+                    </StackLayout>
+                    <!--Description Ends-->
+
+                    <!--Reviews Starts-->
+                    <StackLayout Margin="20,10,20,90" Spacing="25">
+                        <Label Text="Reviews"
+                                   FontSize="20"
+                                   FontFamily="Archivo"
+                                   FontAttributes="Bold"/>
+
+                        <StackLayout>
+                            <Grid ColumnDefinitions=".9*,6*">
+                                <Border Grid.Column="0"
+                                            HeightRequest="45"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <Ellipse/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="profile_pic1.png"/>
+                                </Border>
+
+                                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid RowDefinitions="*,*">
+                                        <Label Grid.Row="0"
+                                                   Text="Cody Cheng"
+                                                   FontFamily="Archivo"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   Margin="0"/>
+
+                                        <Label Grid.Row="1"
+                                                   Text="Hello Omae wa mou shindeiru"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Grid ColumnDefinitions=".9*,6*">
+                                <Border Grid.Column="0"
+                                        HeightRequest="45"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <Ellipse/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="profile_pic1.png"/>
+                                </Border>
+
+                                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid RowDefinitions="*,*">
+                                        <Label Grid.Row="0"
+                                                   Text="Cody Cheng"
+                                                   FontFamily="Archivo"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   Margin="0"/>
+
+                                        <Label Grid.Row="1"
+                                                   Text="Hello Omae wa mou shindeiru"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Grid ColumnDefinitions=".9*,6*">
+                                <Border Grid.Column="0"
+                                        HeightRequest="45"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <Ellipse/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="profile_pic1.png"/>
+                                </Border>
+
+                                <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid RowDefinitions="*,*">
+                                        <Label Grid.Row="0"
+                                                   Text="Cody Cheng"
+                                                   FontFamily="Archivo"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   Margin="0"/>
+
+                                        <Label Grid.Row="1"
+                                                   Text="Hello Omae wa mou shindeiru"
+                                                   Margin="0"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                    <!--Reviews Ends-->
+                </StackLayout>
+
+            </Border>
+        </ScrollView>
+
+        <Image Source="backbutton_white"
+               HeightRequest="35"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               Margin="20,30,0,0"/>
+
+        <Button VerticalOptions="End"
+                Margin="20,20"
+                Background="#F7A350"
+                HeightRequest="50"
+                Text="Add Into My Plan"
+                FontFamily="Archivo"
+                FontAttributes="Bold"
+                FontSize="20"/>
+    </Grid>
+</ContentPage>

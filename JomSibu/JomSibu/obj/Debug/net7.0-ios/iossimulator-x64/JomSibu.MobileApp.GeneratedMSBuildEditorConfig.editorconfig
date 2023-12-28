@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JomSibu
-build_property.ProjectDir = C:\Users\Caleb\Source\Repos\JomSibu\JomSibu\JomSibu\
+build_property.ProjectDir = C:\Users\Caleb\source\repos\JomSibu\JomSibu\JomSibu\
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/App.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/AppShell.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/MainPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Colors.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Styles.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/FavouritePage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/FavouritePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.FavouritePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\FavouritePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\FavouritePage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/HomePage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/HotelLocationPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/HotelLocationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.HotelLocationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HotelLocationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HotelLocationPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/HotelsPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/HotelsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.HotelsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HotelsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HotelsPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/LocationPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/LocationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.LocationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\LocationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LocationPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/LogInPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/LogInPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.LogInPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\LogInPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LogInPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/NotificationPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/NotificationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.NotificationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\NotificationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\NotificationPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/ProfilePage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.ProfilePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/PromotionAndCouponsPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/PromotionAndCouponsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.PromotionAndCouponsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\PromotionAndCouponsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PromotionAndCouponsPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/RoutePage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/RoutePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.RoutePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RoutePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RoutePage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/SettingsPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.SettingsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
 
-[C:/Users/Caleb/Source/Repos/JomSibu/JomSibu/JomSibu/Views/VoucherPage.xaml]
+[C:/Users/Caleb/source/repos/JomSibu/JomSibu/JomSibu/Views/VoucherPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.VoucherPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\VoucherPage.xaml

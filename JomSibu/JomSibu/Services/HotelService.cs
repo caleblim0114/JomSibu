@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace JomSibu.Services
 {
-    public interface IHotelService
-    {
-        Task<HotelsTable> GetAllHotelsDetails();
-    }
+    //public interface IHotelService
+    //{
+    //    Task<HotelsTable> GetAllHotelsDetails();
+    //}
 
-    public class HotelService : IHotelService
-    {
-        public Task<HotelsTable> GetAllHotelsDetails()
-        {
-            return GetTAsync
-        }
-    }
+    //public class HotelService : IHotelService
+    //{
+    //    public Task<HotelsTable> GetAllHotelsDetails()
+    //    {
+
+    //    }
+    //}
 }

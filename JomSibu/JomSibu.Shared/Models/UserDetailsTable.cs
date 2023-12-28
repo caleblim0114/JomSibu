@@ -25,6 +25,12 @@ public partial class UserDetailsTable
 
     public int? BudgetStatusId { get; set; }
 
+    public string AspNetUserId { get; set; }
+
+    public DateTime? DateJoined { get; set; }
+
+    public int? UserRoleId { get; set; }
+
     public virtual BudgetStatusesTable BudgetStatus { get; set; }
 
     public virtual ICollection<UserHotelsTable> UserHotelsTables { get; set; } = new List<UserHotelsTable>();

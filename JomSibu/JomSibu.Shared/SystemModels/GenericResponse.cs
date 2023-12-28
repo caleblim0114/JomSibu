@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SMCRecycle.Shared.SystemModels
+namespace JomSibu.Shared.SystemModels
 {
 	public class GenericResponse<T>
 	{

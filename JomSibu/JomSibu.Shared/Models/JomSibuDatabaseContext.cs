@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JomSibu.Shared.Models;
 
-public partial class JomSibuDatabaseContext : DbContext
+public partial class JomSibuDatabaseContext 
 {
     public JomSibuDatabaseContext(DbContextOptions<JomSibuDatabaseContext> options)
         : base(options)
@@ -114,6 +114,8 @@ public partial class JomSibuDatabaseContext : DbContext
         modelBuilder.Entity<UserDetailsTable>(entity =>
         {
             entity.ToTable("UserDetailsTable");
+
+            entity.Property(e => e.DateJoined).HasColumnType("datetime");
 
             entity.HasOne(d => d.BudgetStatus).WithMany(p => p.UserDetailsTables)
                 .HasForeignKey(d => d.BudgetStatusId)

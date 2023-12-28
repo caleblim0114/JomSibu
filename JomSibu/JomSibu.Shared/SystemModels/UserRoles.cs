@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace JomSibu.Shared.SystemModels
+{
+    public static class UserRoles
+    {
+        public const string SystemAdmin = "SystemAdmin";
+        public const string Admin = "Admin";
+        public const string User = "User";
+    }
+
+    public enum UserRoleEnum
+    {
+        Admin=1,User
+    }
+}

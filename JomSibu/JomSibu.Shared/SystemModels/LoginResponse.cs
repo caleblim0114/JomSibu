@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SMCRecycle.Shared.SystemModels
+namespace JomSibu.Shared.SystemModels
 {
     public class LoginResponse
     {

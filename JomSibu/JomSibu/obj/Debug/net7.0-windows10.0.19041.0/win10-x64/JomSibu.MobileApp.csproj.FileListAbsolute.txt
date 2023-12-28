@@ -1,0 +1,12 @@
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\JomSibu.MobileApp.csproj.AssemblyReference.cache
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\yung7\source\repos\JomSibu\JomSibu\JomSibu\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\JomSibu.MobileApp.GeneratedMSBuildEditorConfig.editorconfig

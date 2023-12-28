@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SMCRecycle.Shared.SystemModels
+namespace JomSibu.Shared.SystemModels
 {
     public class RegisterModel
     {
@@ -28,9 +28,5 @@ namespace SMCRecycle.Shared.SystemModels
         public string Password { get; set; }
 
         public int UserRoleId { get; set; }
-
-        public int? OrganisationId { get; set; }
-        public int? ResidentialZoneId { get; set; }
-        public int? RecyclingCenterId { get; set; }
     }
 }

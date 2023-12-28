@@ -1,13 +1,13 @@
 ﻿using JomSibu.Shared.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
-using Newtonsoft.Json;
-using JomSibu.Data;
 using JomSibu.WebApi.Services;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
+using JomSibu.Shared.SystemModels;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace JomSibu.WebApi.Controllers
 {
@@ -29,62 +29,54 @@ namespace JomSibu.WebApi.Controllers
         
         [HttpGet("GetAllUserDetail")]
         [Authorize(Roles = $"{UserRoles.SystemAdmin},{UserRoles.Admin}")]
-        public async Task<List<UserDetailWithEmailAndPhone>> GetAllUserDetail()
+        public async Task<List<UserDetailsTable>> GetAllUserDetail()
         {
-            return await _database.User
+            return await _database.UserDetailsTables
                 .AsNoTracking()
-                .Where(x => x.IsDeleted != true)
-                .Include(x => x.City)
-                .Include(x => x.RecycleRequestsUserDetail).ThenInclude(x => x.RecycleRequestDetails)
-                .Select(x => new UserDetailWithEmailAndPhone()
+                .Where(x => x.IsDeleted != 1)
+                .Include(x => x.UserRoutesTables)
+                .Select(x => new UserDetailsTable()
                 {
                     Id = x.Id,
                     FullName = x.FullName,
                     UserRoleId = x.UserRoleId,
                     DateJoined = x.DateJoined!.Value.AddHours(8),
-                    Address = x.Address,
-                    Postcode = x.Postcode,
-                    CityId = x.CityId,
-                    City = x.City,
-                    ProfileImagePath = x.ProfileImagePath,
+                    ImagePath = x.ImagePath,
                     PhoneNumber = _database.Users.First(y => y.Id == x.AspNetUserId).PhoneNumber ?? string.Empty,
-                    Email = _database.Users.First(y => y.Id == x.AspNetUserId).Email ?? string.Empty,
-                    UserPoint = x.RecycleRequestsVendorUserDetail.Where(x => x.RecycleRequestStatusId == 3).Sum(x => x.Weight) ?? 0,
-                    DateVerified = x.DateVerified,
-                    VerifiedByUserDetailId = x.VerifiedByUserDetailId
+                    Email = _database.Users.First(y => y.Id == x.AspNetUserId).Email ?? string.Empty
                 })
                 .ToListAsync();
         }
 
-        [HttpGet("GetSystemDetails")]
-        public async Task<SystemDetailsModel> GetSystemDetails()
-        {
-            var aspNetUser = await _userManager.FindByNameAsync(User!.Identity!.Name);
-            var user = await _database.GetUserByAspNetUserIdAsync(aspNetUser.Id);
-            var isVerified = false;
-            if (user.DateVerified != null)
-            {
-                isVerified = true;
-            }
-            var hasIdentity = false;
-            if (user.HasIdentityImages == 1)
-            {
-                hasIdentity = true;
-            }
+        //[HttpGet("GetSystemDetails")]
+        //public async Task<SystemDetailsModel> GetSystemDetails()
+        //{
+        //    var aspNetUser = await _userManager.FindByNameAsync(User!.Identity!.Name);
+        //    var user = await _database.GetUserByAspNetUserIdAsync(aspNetUser.Id);
+        //    var isVerified = false;
+        //    if (user.DateVerified != null)
+        //    {
+        //        isVerified = true;
+        //    }
+        //    var hasIdentity = false;
+        //    if (user.HasIdentityImages == 1)
+        //    {
+        //        hasIdentity = true;
+        //    }
 
-            var systemDetails = new SystemDetailsModel
-            {
-                Version = "1.0.17",
-                IsVerified = isVerified,
-                HasIdentity = hasIdentity,
-                SystemUpdateMessage = "Please update your app to the latest version.",
-            };
+        //    var systemDetails = new SystemDetailsModel
+        //    {
+        //        Version = "1.0.17",
+        //        IsVerified = isVerified,
+        //        HasIdentity = hasIdentity,
+        //        SystemUpdateMessage = "Please update your app to the latest version.",
+        //    };
 
-            return systemDetails;
-        }
+        //    return systemDetails;
+        //}
 
         [HttpGet]
-        public async Task<UserDetailWithEmailAndPhone> GetUserDetail(int id = 0)
+        public async Task<UserDetailsTable> GetUserDetail(int id = 0)
         {
             var aspNetUser = await _userManager.FindByNameAsync(User!.Identity!.Name);
             var user = await _database.GetUserByAspNetUserIdAsync(aspNetUser.Id);
@@ -96,73 +88,29 @@ namespace JomSibu.WebApi.Controllers
                 }
                 return await _database.UserDetailsTables
                     .AsNoTracking()
-                    .Include(x => x.City)
-                    .Include(x => x.RecycleRequestsUserDetail).ThenInclude(x => x.RecycleRequestDetails)
-                    .Include(x => x.RewardRedeemRecords).ThenInclude(x => x.RewardDetail)
-                    .Select(x => new UserDetailWithEmailAndPhone()
+                    .Select(x => new UserDetailsTable()
                     {
                         Id = x.Id,
                         FullName = x.FullName,
                         DateJoined = x.DateJoined!.Value.AddHours(8),
-                        Address = x.Address,
-                        Postcode = x.Postcode,
-                        CityId = x.CityId,
-                        City = x.City,
-                        ProfileImagePath = x.ProfileImagePath,
+                        ImagePath = x.ImagePath,
                         PhoneNumber = _database.Users.First(y => y.Id == x.AspNetUserId).PhoneNumber ?? string.Empty,
                         Email = _database.Users.First(y => y.Id == x.AspNetUserId).Email ?? string.Empty,
-                        UserPoint = x.RecycleRequestsVendorUserDetail.Where(x => x.RecycleRequestStatusId == 3).Sum(x => x.Weight) ?? 0,
-                        DateVerified = x.DateVerified,
-                        VerifiedByUserDetailId = x.VerifiedByUserDetailId,
-                        //UserPoint = (x.RecycleRequestsUserDetail.Sum(y => y.RecycleRequestDetails.Sum(z => z.Weight))) / 1000 - (x.RewardRedeemRecords.Sum(y => y.RewardDetail.Point)) ?? 0,
-                    })
+                        })
                     .FirstAsync(x => x.Id == id);
             } 
-            else if (user.UserRoleId == (int)UserRoleEnum.Vendor || user.UserRoleId == (int)UserRoleEnum.Promoter)
-            {
-                return await _database.UserDetailsTables
-                        .AsNoTracking()
-                        .Include(x => x.City)
-                        .Include(x => x.RecycleRequestsVendorUserDetail)
-                        .Select(x => new UserDetailWithEmailAndPhone()
-                        {
-                            Id = x.Id,
-                            FullName = x.FullName,
-                            DateJoined = x.DateJoined!.Value.AddHours(8),
-                            Address = x.Address,
-                            Postcode = x.Postcode,
-                            CityId = x.CityId,
-                            City = x.City,
-                            ProfileImagePath = x.ProfileImagePath,
-                            PhoneNumber = aspNetUser.PhoneNumber,
-                            Email = aspNetUser.Email,
-                            UserPoint = x.RecycleRequestsVendorUserDetail.Where(x => x.RecycleRequestStatusId == 3).Sum(x => x.Weight) ?? 0,
-                            DateVerified = x.DateVerified,
-                            VerifiedByUserDetailId = x.VerifiedByUserDetailId
-                        })
-                        .FirstAsync(x => x.Id == user.Id);
-            }
             else 
             {
                 return await _database.UserDetailsTables
                     .AsNoTracking()
-                    .Include(x => x.City)
-                    .Include(x=>x.RecycleRequestsUserDetail)
-                    .Select(x => new UserDetailWithEmailAndPhone()
+                    .Select(x => new UserDetailsTable()
                     {
                         Id = x.Id,
                         FullName = x.FullName,
                         DateJoined = x.DateJoined!.Value.AddHours(8),
-                        Address = x.Address,
-                        Postcode = x.Postcode,
-                        CityId = x.CityId,
-                        City = x.City,
-                        ProfileImagePath = x.ProfileImagePath,
+                        ImagePath = x.ImagePath,
                         PhoneNumber = aspNetUser.PhoneNumber,
                         Email = aspNetUser.Email,
-                        UserPoint = x.RecycleRequestsUserDetail.Sum(y => y.Weight) ?? 0,
-                        DateVerified = x.DateVerified,
-                        VerifiedByUserDetailId = x.VerifiedByUserDetailId
                     })
                     .FirstAsync(x => x.Id == user.Id);
             }
@@ -201,8 +149,6 @@ namespace JomSibu.WebApi.Controllers
 
                 aspNetUser.PhoneNumber = record.PhoneNumber;
                 userDetailInDb.FullName = record.FullName;
-                userDetailInDb.Address = record.Address;
-                userDetailInDb.ContactNumber = record.PhoneNumber;
                 //userDetailInDb.Postcode = record.Postcode;
                 //userDetailInDb.CityId = record.CityId;
 
@@ -213,11 +159,11 @@ namespace JomSibu.WebApi.Controllers
                         if (file.Name == "files")
                         {
                             var newPath = await _fileStorageService.CreateFileAsync("UserProfileImage/Image", file.FileName, file.OpenReadStream(), file.ContentType);
-                            if (!string.IsNullOrWhiteSpace(userDetailInDb.ProfileImagePath))
+                            if (!string.IsNullOrWhiteSpace(userDetailInDb.ImagePath))
                             {
-                                await _fileStorageService.DeleteFileIfExistsAsync(userDetailInDb.ProfileImagePath);
+                                await _fileStorageService.DeleteFileIfExistsAsync(userDetailInDb.ImagePath);
                             }
-                            userDetailInDb.ProfileImagePath = newPath;
+                            userDetailInDb.ImagePath = newPath;
                             break;
                         }
                     }
@@ -240,7 +186,7 @@ namespace JomSibu.WebApi.Controllers
                 return NotFound();
             }
 
-            userDetail.IsDeleted = true;
+            userDetail.IsDeleted = 1;
             _database.UserDetailsTables.Update(userDetail);
             await _database.SaveChangesAsync();
 

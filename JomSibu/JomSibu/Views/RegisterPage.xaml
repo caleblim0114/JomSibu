@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JomSibu.Views.RegisterPage"
+             Title="RegisterPage"
+             Background="{StaticResource OrangeGradient}">
+
+    <Grid Margin="30,60,30,30">
+        <Border StrokeThickness="0" StrokeShape="RoundRectangle 10">
+            <StackLayout Margin="20,0,20,0">
+                <Label Text="Sign Up" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,20,0,0"/>
+                <Label Text="Full Name" FontSize="16" FontAttributes="Bold" Margin="0,30,0,0"/>
+                <Entry Placeholder="Name"/>
+                <Label Text="Email" FontSize="16" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry Placeholder="Email"/>
+                <Label Text="Phone Number" FontSize="16" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry Placeholder="Phone"/>
+                <Label Text="Password" FontSize="16" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry Placeholder="Password"/>
+                <Label Text="Confirm Password" FontSize="16" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry Placeholder="Confirm Password"/>
+                <Label Text="What do you expect travelling to Sibu?" FontSize="16" Margin="0,10,0,0" FontAttributes="Bold"/>
+                <Grid ColumnDefinitions="*,*,*" Margin="0,10,0,0">
+                    <Border Grid.Column="0" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="Orange" Margin="2,0,2,0">
+                        <Label Text="Food" TextColor="White" FontSize="12" Margin="10,5,10,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <Border Grid.Column="1" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#E9E9E9" Margin="2,0,2,0">
+                        <Label Text="Local Culture" TextColor="Black" FontSize="12" Margin="10,5,10,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <Border Grid.Column="2" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#E9E9E9" Margin="2,0,2,0">
+                        <Label Text="Shopping" TextColor="Black" FontSize="12" Margin="10,5,10,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                </Grid>
+                <Grid ColumnDefinitions="*,*,*" Margin="0,10,0,0">
+                    <Border Grid.Column="0" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="Orange" Margin="2,0,2,0">
+                        <Label Text="Sports" TextColor="White" FontSize="12" Margin="10,5,10,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <Border Grid.Column="1" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#E9E9E9" Margin="2,0,2,0">
+                        <Label Text="Scenery" TextColor="Black" FontSize="12" Margin="10,5,10,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <Border Grid.Column="2" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#E9E9E9" Margin="2,0,2,0">
+                        <Label Text="Socialize" TextColor="Black" FontSize="12" Margin="10,5,10,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                </Grid>
+                
+            </StackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

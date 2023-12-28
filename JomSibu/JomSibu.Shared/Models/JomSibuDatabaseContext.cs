@@ -2,11 +2,12 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace JomSibu.Shared.Models;
 
-public partial class JomSibuDatabaseContext : DbContext
+public partial class JomSibuDatabaseContext 
 {
     public JomSibuDatabaseContext(DbContextOptions<JomSibuDatabaseContext> options)
         : base(options)
@@ -43,6 +44,15 @@ public partial class JomSibuDatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+
+        // Configure IdentityUserLogin
+        modelBuilder.Entity<IdentityUserLogin<string>>(b =>
+        {
+            b.HasKey(l => new { l.LoginProvider, l.ProviderKey });
+            b.ToTable("AspNetUserLogins"); // Replace with your table name if needed
+        });
+
         modelBuilder.HasAnnotation("Scaffolding:ConnectionString", "Data Source=(local);Initial Catalog=JomSibu.Database;Integrated Security=true");
 
         modelBuilder.Entity<AdvertisementsTable>(entity =>
@@ -114,6 +124,8 @@ public partial class JomSibuDatabaseContext : DbContext
         modelBuilder.Entity<UserDetailsTable>(entity =>
         {
             entity.ToTable("UserDetailsTable");
+
+            entity.Property(e => e.DateJoined).HasColumnType("datetime");
 
             entity.HasOne(d => d.BudgetStatus).WithMany(p => p.UserDetailsTables)
                 .HasForeignKey(d => d.BudgetStatusId)

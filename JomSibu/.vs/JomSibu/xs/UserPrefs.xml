@@ -1,32 +1,39 @@
-﻿<Properties StartupConfiguration="{19E2E6E8-5073-4DDC-B940-5B89FD04107B}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties StartupConfiguration="{3D96B241-8BBB-45AB-B322-E3F85EF658BC}|https">
+  <MonoDevelop.Ide.ItemProperties.JomSibu.WebApi PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.ItemProperties.JomSibu.WebApi FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.JomSibu.Shared FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="JomSibu.WebApi/Controllers/AccountController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="JomSibu.WebApi/Controllers/AuthenticateController.cs">
     <Files>
-      <File FileName="JomSibu.Shared/Class1.cs" />
-      <File FileName="JomSibu.WebApi/Controllers/AccountController.cs" Line="71" Column="28" />
+      <File FileName="JomSibu.WebApi/Controllers/AuthenticateController.cs" Line="147" Column="1" />
+      <File FileName="JomSibu.Shared/Models/JomSibuDatabaseContext.cs" Line="53" Column="40" />
+      <File FileName="JomSibu.WebApi/Program.cs" Line="64" Column="44" />
+      <File FileName="../../../.microsoft/usersecrets/4de2006b-efa7-4ee4-a76c-bebbb8e1f292/secrets.json" Line="18" Column="1" />
+      <File FileName="JomSibu.Shared/Models/JomSibuDatabaseContextPartial.cs" Line="17" Column="62" />
+      <File FileName="JomSibu.Shared/SystemModels/UserRoles.cs" Line="18" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="JomSibu">
-            <Node name="JomSibu.Shared" expanded="True" />
+          <Node name="JomSibu" expanded="True">
+            <Node name="JomSibu.Shared" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="SystemModels" expanded="True" />
+            </Node>
             <Node name="JomSibu.WebApi" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="AccountController.cs" selected="True" />
+                <Node name="AuthenticateController.cs" selected="True" />
               </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.JomSibu.MobileApp PreferredExecutionTarget="MyAppleMacCatalystID" FirstBuild="True" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.JomSibu.MobileApp PreferredExecutionTarget="MyAppleMacCatalystID" />
 </Properties>

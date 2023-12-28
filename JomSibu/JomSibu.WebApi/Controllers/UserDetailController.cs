@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
-using SMCRecycle.Data;
-using SMCRecycle.WebApi.Services;
+using JomSibu.Data;
+using JomSibu.WebApi.Services;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 
-namespace SMCRecycle.WebApi.Controllers
+namespace JomSibu.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -30,7 +31,7 @@ namespace SMCRecycle.WebApi.Controllers
         [Authorize(Roles = $"{UserRoles.SystemAdmin},{UserRoles.Admin}")]
         public async Task<List<UserDetailWithEmailAndPhone>> GetAllUserDetail()
         {
-            return await _database.UserDetails
+            return await _database.User
                 .AsNoTracking()
                 .Where(x => x.IsDeleted != true)
                 .Include(x => x.City)
@@ -93,7 +94,7 @@ namespace SMCRecycle.WebApi.Controllers
                 {
                     id = user.Id;
                 }
-                return await _database.UserDetails
+                return await _database.UserDetailsTables
                     .AsNoTracking()
                     .Include(x => x.City)
                     .Include(x => x.RecycleRequestsUserDetail).ThenInclude(x => x.RecycleRequestDetails)
@@ -119,7 +120,7 @@ namespace SMCRecycle.WebApi.Controllers
             } 
             else if (user.UserRoleId == (int)UserRoleEnum.Vendor || user.UserRoleId == (int)UserRoleEnum.Promoter)
             {
-                return await _database.UserDetails
+                return await _database.UserDetailsTables
                         .AsNoTracking()
                         .Include(x => x.City)
                         .Include(x => x.RecycleRequestsVendorUserDetail)
@@ -143,7 +144,7 @@ namespace SMCRecycle.WebApi.Controllers
             }
             else 
             {
-                return await _database.UserDetails
+                return await _database.UserDetailsTables
                     .AsNoTracking()
                     .Include(x => x.City)
                     .Include(x=>x.RecycleRequestsUserDetail)
@@ -171,7 +172,7 @@ namespace SMCRecycle.WebApi.Controllers
         public async Task<IActionResult> UpdateUserDetail()
         {
             var aspNetUser = await _userManager.FindByNameAsync(User!.Identity!.Name);
-            var userDetailInDb = await _database.UserDetails
+            var userDetailInDb = await _database.UserDetailsTables
                 .FirstAsync(x => x.AspNetUserId == aspNetUser.Id);
             var httpRequest = HttpContext.Request;
 
@@ -233,14 +234,14 @@ namespace SMCRecycle.WebApi.Controllers
         [Authorize(Roles = $"{UserRoles.SystemAdmin},{UserRoles.Admin}")]
         public async Task<IActionResult> DeleteUserDetail(long id)
         {
-            var userDetail = await _database.UserDetails.FindAsync(id);
+            var userDetail = await _database.UserDetailsTables.FindAsync(id);
             if (userDetail == null)
             {
                 return NotFound();
             }
 
             userDetail.IsDeleted = true;
-            _database.UserDetails.Update(userDetail);
+            _database.UserDetailsTables.Update(userDetail);
             await _database.SaveChangesAsync();
 
             return NoContent();

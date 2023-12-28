@@ -94,6 +94,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.PromotionAnd
 build_metadata.AdditionalFiles.TargetPath = Views\PromotionAndCouponsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PromotionAndCouponsPage.xaml
 
+[C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
 [C:/Users/yung7/source/repos/JomSibu/JomSibu/JomSibu/Views/RoutePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JomSibu.Views.RoutePage.xaml

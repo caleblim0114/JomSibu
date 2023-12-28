@@ -12,6 +12,7 @@ using JomSibu.WebApi.Services;
 using System.Numerics;
 using JomSibu.Shared.Models;
 using Microsoft.EntityFrameworkCore;
+using SMCRecycle.Shared.SystemModels;
 
 namespace JomSibu.WebApi.Controllers
 {
@@ -23,13 +24,11 @@ namespace JomSibu.WebApi.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
         private JomSibuDatabaseContext _database;
-        private IEmailSender _emailSender;
         private IFileStorageService _fileStorageService;
 
         public AuthenticateController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager,
-            IConfiguration configuration, JomSibuDatabaseContext database, IEmailSender emailSender, IFileStorageService fileStorageService)
+            IConfiguration configuration, JomSibuDatabaseContext database, IFileStorageService fileStorageService)
         {
-            _emailSender = emailSender;
             _database = database;
             _userManager = userManager;
             _roleManager = roleManager;

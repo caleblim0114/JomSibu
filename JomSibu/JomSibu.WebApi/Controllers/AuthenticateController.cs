@@ -210,20 +210,20 @@ namespace JomSibu.WebApi.Controllers
                         await _database.UserDetailsTables.AddAsync(newUser);
                         await _database.SaveChangesAsync();
 
-                        var createdUser = _database.UserDetailsTables.FirstOrDefault(x => x.Email == model.Email);
+                        //var createdUser = _database.UserDetailsTables.FirstOrDefault(x => x.Email == model.Email);
 
-                        if (model.Preferences.Count() != 0)
-                        {
-                            foreach (var pref in model.Preferences)
-                            {
-                                _database.UserPreferencesTables.Add(new UserPreferencesTable
-                                {
-                                    UserId = createdUser.Id,
-                                    PreferenceId = pref.Id,
-                                });
-                            }
-                        }
-                        await _database.SaveChangesAsync();
+                        //if (model.Preferences.Count() != 0)
+                        //{
+                        //    foreach (var pref in model.Preferences)
+                        //    {
+                        //        _database.UserPreferencesTables.Add(new UserPreferencesTable
+                        //        {
+                        //            UserId = createdUser.Id,
+                        //            PreferenceId = pref.Id,
+                        //        });
+                        //    }
+                        //}
+                        //await _database.SaveChangesAsync();
 
                         await transaction.CommitAsync();
                         return StatusCode(StatusCodes.Status200OK, new CustomResponse { StatusCode = CustomStatusCodes.Ok, Message = "User created successfully!" });

@@ -32,6 +32,6 @@ namespace JomSibu.Shared.SystemModels
         public int IsHalal { get; set; }
         public int IsVegeterian { get; set; }
         public int BudgetStatusId { get; set; }
-        public ICollection<PreferencesTable>? Preferences { get; set; }
+        //public ICollection<PreferencesTable>? Preferences { get; set; }
     }
 }

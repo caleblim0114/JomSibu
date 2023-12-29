@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yung7\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {}
+    "C:\\Users\\Caleb\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yung7\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
+    "C:\\Users\\Caleb\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yung7\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Caleb\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
         "projectName": "JomSibu.Shared",
-        "projectPath": "C:\\Users\\yung7\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
-        "packagesPath": "C:\\Users\\yung7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yung7\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\obj\\",
+        "projectPath": "C:\\Users\\Caleb\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\JomSibu.Shared.csproj",
+        "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caleb\\source\\repos\\JomSibu\\JomSibu\\JomSibu.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\yung7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
